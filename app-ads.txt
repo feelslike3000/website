@@ -1,0 +1,13 @@
+# app-ads.txt for __DOMAIN__
+# ---------------------------------------------------------------------------
+# STATUS: PLACEHOLDER. This file intentionally contains only comments for now
+# so the URL returns HTTP 200 with a valid text/plain body before monetization.
+#
+# When the AdMob (enterprise) account is provisioned, 主控 replaces the line
+# below with the authoritative record shown in AdMob → App settings → app-ads.txt.
+# Expected format (publisher ID is issued by AdMob, do NOT guess):
+#
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# Reference: https://support.google.com/admob/answer/9363762
+# ---------------------------------------------------------------------------
