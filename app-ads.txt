@@ -1,4 +1,4 @@
-# app-ads.txt for __DOMAIN__
+# app-ads.txt for calyxharbor.com
 # ---------------------------------------------------------------------------
 # STATUS: PLACEHOLDER. This file intentionally contains only comments for now
 # so the URL returns HTTP 200 with a valid text/plain body before monetization.
