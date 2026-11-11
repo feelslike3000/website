@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cold Harbor of Calyx — Independent utility apps for Android</title>
-<meta name="description" content="Cold Harbor of Calyx builds independent, privacy-friendly utility apps for Android.">
+<title>Cold Harbor of Calyx — CalyxRandom &amp; Android utility apps</title>
+<meta name="description" content="Explore CalyxRandom on Google Play, plus upcoming CalyxShrink photo tools and CalyxCode QR tools from Cold Harbor of Calyx.">
 <link rel="canonical" href="https://calyxharbor.com/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,16 +30,21 @@
   h2 { font-family: 'Poppins', 'Inter', sans-serif; font-size: 1.12rem; margin: 34px 0 12px; }
   a { color: var(--primary); text-decoration: none; }
   a:hover { text-decoration: underline; color: var(--primary-deep); }
+  a:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; border-radius: 2px; }
   .apps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
   .app { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; background: var(--surface);
          display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
   .app-icon { width: 44px; height: 44px; border-radius: 11px; background: var(--primary);
               display: flex; align-items: center; justify-content: center; }
-  .app h3 { font-family: 'Poppins', 'Inter', sans-serif; margin: 0 0 4px; font-size: 1.02rem; }
+  .app h3 { font-family: 'Poppins', 'Inter', sans-serif; margin: 0 0 8px; font-size: 1.02rem;
+            display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
   .app p { margin: 0 0 10px; color: var(--muted); font-size: .95rem; }
-  .app .links a { font-size: .92rem; margin-right: 16px; white-space: nowrap; font-weight: 500; }
-  .badge-soon { display: inline-block; font-size: .78rem; font-weight: 600; color: var(--muted);
-                border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; vertical-align: 2px; margin-left: 8px; }
+  .app .links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  .app .links a { font-size: .92rem; font-weight: 500; }
+  .badge { display: inline-block; font-family: 'Inter', sans-serif; font-size: .78rem; font-weight: 600;
+           color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
+  .badge-live { color: var(--primary-deep); background: #E8F4F1; border-color: #C6DED6; }
+  .app .availability { font-size: .85rem; }
   .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
   .langs { color: var(--muted); font-size: .9rem; margin-top: 8px; }
   footer { border-top: 1px solid var(--line); margin-top: 44px; padding-top: 18px;
@@ -76,9 +81,13 @@
       <li class="app">
         <div class="app-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="13" cy="14" r="9"/><path d="M13 14V5M13 14l8 4M13 14l-8 4"/><path d="M13 1l-3 5h6z" fill="#F2A93B" stroke="none"/></svg></div>
         <div>
-          <h3>CalyxRandom <span class="badge-soon">Coming soon</span></h3>
+          <h3>CalyxRandom <span class="badge badge-live">Available now</span></h3>
           <p>Make everyday choices with a wheel, numbers, coin, dice, names and teams. Reuse your lists or enjoy a moment of reflection with original tarot, words and poems.</p>
-          <div class="links"><a href="/privacy/calyx-random/">Privacy Policy</a></div>
+          <p class="availability">Available on Google Play in the United States, Brazil and Indonesia.</p>
+          <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.calyxharbor.calyxrandom" rel="noopener" aria-label="Get CalyxRandom on Google Play">Get it on Google Play</a>
+            <a href="/privacy/calyx-random/" aria-label="CalyxRandom Privacy Policy">Privacy Policy</a>
+          </div>
         </div>
       </li>
       <li class="app">
@@ -89,11 +98,10 @@
           </svg>
         </div>
         <div>
-          <h3>QR Master — QR Code Scanner</h3>
-          <p>Fast, offline-first QR &amp; barcode scanner and generator. Your scan history and created codes stay on your device.</p>
+          <h3>CalyxCode — QR Code Scanner <span class="badge">In development</span></h3>
+          <p>Scan QR codes and barcodes, create QR codes for links, Wi-Fi and contacts, and keep your history on your device.</p>
           <div class="links">
-            <a href="https://play.google.com/store/apps/details?id=com.calyxharbor.calyxcode" rel="noopener">Google Play</a>
-            <a href="/privacy/qr-master/">Privacy Policy</a>
+            <a href="/privacy/qr-master/" aria-label="CalyxCode Privacy Policy">Privacy Policy</a>
           </div>
         </div>
       </li>
@@ -104,10 +112,10 @@
           </svg>
         </div>
         <div>
-          <h3>Photo Shrink — Image Compressor <span class="badge-soon">Coming soon</span></h3>
-          <p>Compress, resize and convert photos on your device. No account, no upload — your images never leave your phone.</p>
+          <h3>CalyxShrink — Compress Photos <span class="badge">Preparing for release</span></h3>
+          <p>Compress, resize and convert photos on your device. Set a file-size limit, pixel width and output format, then check the result before saving or sharing.</p>
           <div class="links">
-            <a href="/privacy/photo-shrink/">Privacy Policy</a>
+            <a href="/privacy/photo-shrink/" aria-label="CalyxShrink Privacy Policy">Privacy Policy</a>
           </div>
         </div>
       </li>
@@ -125,6 +133,7 @@
 
 <footer>
   <span>© 2026 Cold Harbor of Calyx</span>
+  <span>Updated <time datetime="2026-11-11">November 11, 2026</time></span>
   <a href="/privacy/">Privacy Policy</a>
   <a href="mailto:support@calyxharbor.com">support@calyxharbor.com</a>
 </footer>
