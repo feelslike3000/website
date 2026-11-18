@@ -17,44 +17,43 @@
 <body>
 <nav class="crumbs"><a href="/">Home</a> / <a href="/privacy/">Privacy</a> / CalyxShrink</nav>
 <h1>Privacy Policy — CalyxShrink</h1>
-<p class="meta">Version 1.0 &middot; Effective date: 2026-07-27 &middot; App: CalyxShrink (formerly Photo Shrink; com.calyxharbor.calyxshrink)</p>
-<p>CalyxShrink ("we", "the app") respects your privacy. This policy explains what data the app processes, why, and where it goes. <strong>All photo compression happens entirely on your device — your photos are never uploaded anywhere.</strong></p>
+<p class="meta">Updated November 19, 2026 · CalyxShrink (formerly Photo Shrink, com.calyxharbor.calyxshrink)</p>
+<p>CalyxShrink compresses photos on your device. The app does not send your photos or compression history to our servers or advertising providers. If you choose Share, Android sends the selected copy to the app you choose. Any gallery backup service you have enabled is governed by that service and your settings.</p>
 
 <h2>1. Data We Collect and Process</h2>
 <h3>1.1 Advertising identifiers (Google AdMob)</h3>
 <ul>
-  <li>The app shows ads via <strong>Google AdMob</strong>. To serve and measure ads, Google may collect the <strong>advertising ID</strong> and device identifiers, and use them for ad personalization, attribution, and fraud prevention, subject to your consent choices (EU/UK users are asked via a UMP consent dialog on first launch).</li>
+  <li>Google AdMob collects and shares device or advertising identifiers, IP addresses, ad interactions and diagnostic information for ad delivery, measurement, personalization where permitted, and fraud prevention. Google can use the IP address to estimate your general location.</li>
+  <li>Google’s consent form appears where applicable. You can revisit the available choices in the app’s privacy settings.</li>
   <li>Google's own privacy policy applies: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
   <li>You can reset or limit your advertising ID in Android Settings (Ads / Privacy).</li>
 </ul>
 <h3>1.2 Analytics (Firebase Analytics)</h3>
 <ul>
   <li>We use <strong>Firebase Analytics</strong> to understand feature usage (e.g., counts of compressions and size savings percentages, ad impressions). Events contain <strong>no photos and no file names</strong> — only event types (such as task_start, task_success) and technical parameters.</li>
-  <li>No personal identity information (name, email, contacts, location) is collected.</li>
+  <li>Google Analytics can associate usage events with an app-instance identifier, device information and an approximate region. CalyxShrink does not request GPS location or access your contacts.</li>
 </ul>
 <h3>1.3 Crash reporting (Firebase Crashlytics)</h3>
-<ul><li>We use <strong>Firebase Crashlytics</strong> to collect crash logs and device state at the time of a crash, to keep the app stable. Crash reports do not include your photos.</li></ul>
+<ul><li>Firebase Crashlytics receives crash reports, stack traces, installation identifiers and device or app details so we can diagnose failures. CalyxShrink does not attach photos to reports.</li></ul>
 <h3>1.4 Remote configuration (Firebase Remote Config)</h3>
-<ul><li>Ad frequency parameters (e.g., interstitial caps) are remotely configurable via <strong>Firebase Remote Config</strong>. It does not collect user data.</li></ul>
+<ul><li>Firebase Remote Config fetches settings such as ad frequency. The service uses installation and app identifiers and technical information including app and operating system versions, country, language and time zone to deliver configuration values.</li></ul>
 
-<h2>2. Data We Do NOT Collect</h2>
+<h2>2. Photos and account information</h2>
 <ul>
-  <li>No account, no sign-up, no personal information (name, email, phone)</li>
-  <li>No location data</li>
-  <li>No contacts, call logs, SMS, microphone, or camera access</li>
-  <li>Your photos are processed <strong>only locally</strong>: originals are read via the Android system Photo Picker, compressed copies are saved to your gallery via the system MediaStore, and compression history stays in on-device storage — <strong>nothing is ever transmitted</strong> to us or any third party</li>
-  <li>No cookies or tracking pixels</li>
+  <li>You can use CalyxShrink without an account. It does not ask for your name, email address or phone number to compress photos.</li>
+  <li>You select photos through Android’s picker. The app reads the selected files and stores the compressed output and its history locally. It does not need access to your contacts, messages, microphone or camera.</li>
 </ul>
 
 <h2>3. Permissions</h2>
 <table>
   <tr><th>Permission</th><th>Purpose</th><th>Notes</th></tr>
-  <tr><td colspan="3"><strong>None.</strong> The app declares no camera, storage, or media permissions. Photo selection uses the Android system Photo Picker and saving uses the system MediaStore, neither of which requires a runtime permission.</td></tr>
+  <tr><td>Selected photos and output folder</td><td>Open selected images and save compressed copies</td><td>Android handles photo selection. On Android 10 or later, the app adds your new copy to the gallery. On Android 7–9, the new release asks you to choose a folder in Pictures or DCIM. The app does not request broad access to your photo library.</td></tr>
+  <tr><td>Internet and advertising identifiers</td><td>Advertising, usage measurement, remote settings and crash reporting</td><td>These services use the data described above. Photo compression runs locally.</td></tr>
 </table>
 
 <h2>4. Data Retention and Deletion</h2>
 <ul>
-  <li>Local data (compression history, settings) stays on your device until you delete it: use <strong>Settings → Clear History</strong>, or uninstall the app to remove everything. Compressed photos you saved to the gallery are yours and remain until you delete them.</li>
+  <li>Use <strong>Settings → Clear History</strong> to delete the app’s compression records and their stored copies. Uninstalling removes the app’s local data. Copies you saved in the gallery remain until you delete them there.</li>
   <li>Analytics/advertising data collected by Google is governed by Google's retention policies.</li>
 </ul>
 
